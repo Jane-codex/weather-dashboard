@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+  <div class="weather-dashboard">
+  <h1>Weather Dashboard</h1>
+
+  <div id="search-container">
+    <input type="text" id="city-input" placeholder="Enter city name">
+    <button id="search-btn">Search</button>
+     <a id="mapLink" href="#" target="_blank">🌍 View Weather Map</a>
+  </div>
+  <p><strong>Location: </strong><span id="location">Loading...</span></p>
+  <p><strong>Temperature: </strong><span id="temperature"></span></p>
+ <button id="toggle-unit">Switch to °C/°F</button>
+  <p><strong>Condition: </strong><span id="condition"></span></p>
+
+    <div id="history-section">
+      <h3>Search History</h3>
+      <ul id="history-list"></ul>
+      <button id="clear-history-btn">🗑️Clear History</button>
+    </div>
+
+
+  <h2>5-Day Forecast</h2> 
+  <div id="forecast-container"></div>
+
+ <div class="suggestion-box">
+   <h3>Weather Tips:</h3>
+  <p id="suggestion-text">Loading suggestion...</p>
+  </div>
+
+  <div id="weather-map">
+    <h2>Weather Map</h2>
+    <iframe 
+    id="weatherMap"
+            width="100%"
+          height="450"
+          allow="geolocation"
+       frameborders="0"
+       title="Weather Map"></iframe>                                                                         
+  </div>
+
+  </div>
+
+
+
+ <script defer  src="js/main.js"></script>
+
+</body>
+</html>
